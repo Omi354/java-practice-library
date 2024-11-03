@@ -10,7 +10,7 @@ public class Main {
     Scanner scanner = new Scanner(System.in);
 
     while (true) {
-      searchBooks(scanner, library);
+      searchForBooks(scanner, library);
 
       System.out.println("再度検索しますか？(y / n)");
       String yesOrNo = scanner.next();
@@ -27,7 +27,7 @@ public class Main {
     }
   }
 
-  private static void searchBooks(Scanner scanner, Library library) {
+  private static void searchForBooks(Scanner scanner, Library library) {
     System.out.println("タイトル検索は1,著者名検索は2,id検索は3を入力してください： ");
     int inputNumber = scanner.nextInt();
 
